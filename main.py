@@ -17,8 +17,8 @@ def submit():
 @app.route('/success/<name>/<serc6>/<serc9>/')
 def success(name,serc6,serc9):
     return f"<h2>{name}</h2>"\
-           f"<h2>{serc6}元</h2>"\
-           f"<h2>{serc9}元</h2>"\
+           f"<h2>{serc6}</h2>"\
+           f"<h2>{serc9}</h2>"\
            "<h2><input type='button' value='返回首頁' onclick='history.back()' style='width:90px;height:40px;'/></h2>"\
 
 
