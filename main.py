@@ -1,8 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for
-from flask import Flask
-import time
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
