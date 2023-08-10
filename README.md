@@ -1,6 +1,5 @@
-# flask
-A minimal Flask web application.
-
-For a step-by-step guide to deploying on [Railway](https://railway.app/?referralCode=alphasec), see [this](https://alphasec.io/how-to-deploy-a-python-flask-app-on-railway/) post, or click the button below.
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/igzwwg?referralCode=alphasec)
+$ git clone https://github.com/joyzoursky/docker-python-chromedriver.git
+$ cd docker-python-chromedriver
+$ docker run -it -w /usr/workspace -v $(pwd):/usr/workspace joyzoursky/python-chromedriver:latest bash
+/usr/workspace# pip install selenium
+/usr/workspace# python test_script.py
