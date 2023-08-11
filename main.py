@@ -13,9 +13,7 @@ def submit():
         user = request.form['user']
         tte = request.form['user2']
         tte2 = request.form['user3']
-        chrome_options=Options()
         chrome_options.add_argument("--headless")
-        chrome_options = Options()
         driver.get("https://ppstrq.nat.gov.tw/pps/pubQuery/PropertyQuery/propertyQuery.do")
         return redirect(url_for('success', name=user,serc6=tte,serc9=tte2))
 
