@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect, url_for
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 app = Flask(__name__)
 
 @app.route('/')
@@ -12,6 +13,10 @@ def submit():
         user = request.form['user']
         tte = request.form['user2']
         tte2 = request.form['user3']
+        chrome_options=Options()
+        chrome_options.add_argument("--headless")
+        driver=webdriver.Chrome(options=chrome_options)
+        driver.get("https://ppstrq.nat.gov.tw/pps/pubQuery/PropertyQuery/propertyQuery.do")
         return redirect(url_for('success', name=user,serc6=tte,serc9=tte2))
 
 @app.route('/success/<name>/<serc6>/<serc9>/')
