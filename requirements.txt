@@ -1,5 +1,2 @@
 flask
-click
-requests
 selenium
-
